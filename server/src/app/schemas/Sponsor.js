@@ -1,6 +1,5 @@
 import mongoose, { Schema } from 'mongoose';
 
-<<<<<<< HEAD
 const SponsorSchema = new Schema(
   {
     name: {
@@ -20,12 +19,3 @@ const SponsorSchema = new Schema(
 const sponsor = mongoose.model('Sponsor', SponsorSchema);
 
 export default sponsor;
-=======
-const SponsorSchema = new Schema({
-    name: String,
-});
-
-const sponsor = mongoose.model('Sponsor', SponsorSchema);
-
-export default sponsor;
->>>>>>> ad7027fe9854f4efc874f5cc2272827fcbbddc5a
