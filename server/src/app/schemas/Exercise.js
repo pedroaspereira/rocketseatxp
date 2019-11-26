@@ -1,5 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 
+<<<<<<< HEAD
 const ExerciseSchema = new Schema(
   {
     course_id: {
@@ -19,6 +20,13 @@ const ExerciseSchema = new Schema(
     timestamps: true,
   }
 );
+=======
+const ExerciseSchema = new Schema({
+    course_id: String,
+    exercise_presentation_url: String,
+    exercise_points: Number,
+});
+>>>>>>> ad7027fe9854f4efc874f5cc2272827fcbbddc5a
 
 const exercise = mongoose.model('Exercise', ExerciseSchema);
 
