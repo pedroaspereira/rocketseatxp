@@ -7,6 +7,8 @@ import CourseController from './app/controllers/CourseController';
 import ExerciseController from './app/controllers/ExerciseController';
 import SponsorController from './app/controllers/SponsorController';
 
+import OfferController from './app/controllers/OfferController';
+
 const routes = new Router();
 const upload = multer(multerConfig);
 
@@ -21,6 +23,8 @@ routes.post('/exercises', ExerciseController.store);
 
 routes.get('/sponsors', SponsorController.index);
 routes.post('/sponsors', SponsorController.store);
+
+routes.post('/offer', OfferController.store);
 
 routes.post('/files', upload.single('file'), (req, res) => {
   return res.json({ ok: true });
