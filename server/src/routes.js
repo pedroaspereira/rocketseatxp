@@ -3,6 +3,8 @@ import multer from 'multer';
 import multerConfig from './config/multer';
 
 import UserController from './app/controllers/UserController';
+import SchoolController from './app/controllers/SchoolController';
+import StudentRankingController from './app/controllers/StudentRankingController';
 import CourseController from './app/controllers/CourseController';
 import ExerciseController from './app/controllers/ExerciseController';
 import SponsorController from './app/controllers/SponsorController';
@@ -29,4 +31,9 @@ routes.post('/files', upload.single('file'), (req, res) => {
   return res.json({ ok: true });
 });
 
+routes.post('/schools', SchoolController.store);
+routes.get('/schools', SchoolController.show);
+
+routes.post('/studentRanking', StudentRankingController.store);
+routes.get('/studentRanking', StudentRankingController.show);
 export default routes;
