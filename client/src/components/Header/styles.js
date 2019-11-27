@@ -1,12 +1,15 @@
 import styled from 'styled-components';
+import bgMenu from '../../assets/Rectangle.png';
 
 export const HeaderWrapper = styled.div`
   padding: 0 30px;
-  background: #009eb2;
+  background-image: url(${bgMenu});
+  height: 116px;
 `;
 
 export const HeaderContent = styled.div`
-  height: 64px;
+  height: 80px;
+
   max-width: 900px;
   margin: 0 auto;
   display: flex;

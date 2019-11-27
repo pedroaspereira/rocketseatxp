@@ -22,15 +22,16 @@ const Classroom = () => {
         <CardWrapper>
           <SeriesCard>
             <Link to="/modules" />
-            <SeriesHeader>1 ano</SeriesHeader>
+            <SeriesHeader>1º ano</SeriesHeader>
             <SeriesStrong>Esino Médio</SeriesStrong>
           </SeriesCard>
           <SeriesCard Link="/modules">
-            <SeriesHeader>2 ano</SeriesHeader>
+            <SeriesHeader>2º ano</SeriesHeader>
             <SeriesStrong>Esino Médio</SeriesStrong>
           </SeriesCard>
           <SeriesCard>
-            <SeriesHeader>3 ano</SeriesHeader>
+            <SeriesHeader>3º ano</SeriesHeader>
+
             <SeriesStrong>Esino Médio</SeriesStrong>
           </SeriesCard>
         </CardWrapper>

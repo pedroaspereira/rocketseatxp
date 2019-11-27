@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const RankingWrapper = styled.div`
   margin: 0;
   height: 100%;
-  background: linear-gradient(-180deg, #009eb2, #f6f6f6);
   align-content: center;
   h1 {
     margin: 0;
@@ -22,8 +21,9 @@ export const RankingHeader = styled.div`
     padding-left: 30px;
     background: none;
     font-size: 20px;
-    color: #fff;
     border-top: 4px #009eb2;
+    background: #fff8f8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 `;
 
@@ -52,6 +52,9 @@ export const RankingPosition = styled.li`
   padding: 20px;
   border-radius: 4px;
   background: #fff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px #000000;
 
   header {
     display: flex;

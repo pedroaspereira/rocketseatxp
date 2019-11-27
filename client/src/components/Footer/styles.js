@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.div`
   padding: 0 30px;
-  background: #009eb2;
-`;
+  background: #18326b;
 
 export const FooterContent = styled.div`
   height: 64px;
@@ -26,9 +25,9 @@ export const FooterContent = styled.div`
     }
 
     a {
-      font-weight: bold;
+      font-weight: normal;
       color: #ffff;
-      font-size: 20px;
+      font-size: 15px;
     }
   }
 
