@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 
-const UserSchema = new Schema(
+const SponsorSchema = new Schema(
   {
     name: {
       type: String,
@@ -10,16 +10,12 @@ const UserSchema = new Schema(
       type: String,
       required: true,
     },
-    password: {
-      type: String,
-      required: true,
-    },
   },
   {
     timestamps: true,
   }
 );
 
-const user = mongoose.model('User', UserSchema);
+const sponsor = mongoose.model('Sponsor', SponsorSchema);
 
-export default user;
+export default sponsor;
