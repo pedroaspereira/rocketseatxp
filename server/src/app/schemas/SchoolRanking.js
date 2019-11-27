@@ -1,9 +1,9 @@
 import mongoose, { Schema } from 'mongoose';
 
 const SchoolRankingSchema = new Schema({
-    school_id: String,
-    total_points: Number,
-    position: Number,
+  school_id: String,
+  total_points: Number,
+  position: Number,
 });
 
 const schoolRanking = mongoose.model('SchoolRanking', SchoolRankingSchema);

@@ -1,10 +1,24 @@
 import mongoose, { Schema } from 'mongoose';
 
-const ExerciseSchema = new Schema({
-    course_id: String,
-    exercise_presentation_url: String,
-    exercise_points: Number,
-});
+const ExerciseSchema = new Schema(
+  {
+    course_id: {
+      type: String,
+      required: true,
+    },
+    exercise_presentation_url: {
+      type: String,
+      required: true,
+    },
+    exercise_points: {
+      type: String,
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 const exercise = mongoose.model('Exercise', ExerciseSchema);
 

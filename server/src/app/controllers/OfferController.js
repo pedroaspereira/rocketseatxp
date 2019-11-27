@@ -18,7 +18,6 @@ class OfferController {
 
         return res.json({ ok: true });
     }
-
 }
 
 export default new OfferController();
