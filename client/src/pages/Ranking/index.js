@@ -10,7 +10,12 @@ import {
   RankingPosition,
 } from './styles';
 
-const Ranking = () => {
+import { withRankingData } from './withRankingData/withRankingHOC';
+
+const Ranking = ({ totalRanking }) => {
+  const rank = totalRanking;
+  console.log(rank);
+
   return (
     <div>
       <Header />
@@ -31,7 +36,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -46,7 +51,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -61,7 +66,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -76,7 +81,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -91,7 +96,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -106,7 +111,7 @@ const Ranking = () => {
               </header>
               <footer>
                 <span>9827</span>
-                <smal>Pontos</smal>
+                <small>Pontos</small>
               </footer>
             </RankingPosition>
           </ul>
@@ -117,4 +122,4 @@ const Ranking = () => {
   );
 };
 
-export default Ranking;
+export default withRankingData(Ranking);

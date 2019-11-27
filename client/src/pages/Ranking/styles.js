@@ -44,7 +44,7 @@ export const RankingList = styled.div`
   ul {
     display: grid;
     grid-gap: 15px;
-    margin-top: 30px:
+    margin-top: 30px;
   }
 `;
 
