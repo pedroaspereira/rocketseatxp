@@ -26,6 +26,7 @@ routes.get('/sponsors', SponsorController.index);
 routes.post('/sponsors', SponsorController.store);
 
 routes.post('/offer', OfferController.store);
+routes.get('/offer', OfferController.index);
 
 routes.post('/files', upload.single('file'), (req, res) => {
   return res.json({ ok: true });
