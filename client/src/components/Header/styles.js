@@ -9,6 +9,7 @@ export const HeaderWrapper = styled.div`
 
 export const HeaderContent = styled.div`
   height: 80px;
+
   max-width: 900px;
   margin: 0 auto;
   display: flex;

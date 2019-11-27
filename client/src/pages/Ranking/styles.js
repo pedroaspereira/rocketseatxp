@@ -21,7 +21,6 @@ export const RankingHeader = styled.div`
     padding-left: 30px;
     background: none;
     font-size: 20px;
-
     border-top: 4px #009eb2;
     background: #fff8f8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

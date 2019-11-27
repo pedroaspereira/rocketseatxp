@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.div`
   padding: 0 30px;
   background: #18326b;
-`;
 
 export const FooterContent = styled.div`
   height: 64px;
@@ -29,7 +28,6 @@ export const FooterContent = styled.div`
       font-weight: normal;
       color: #ffff;
       font-size: 15px;
-
     }
   }
 
@@ -38,6 +36,6 @@ export const FooterContent = styled.div`
     align-items: center;
     nav {
       padding: 10px;
-      
+    }
   }
 `;

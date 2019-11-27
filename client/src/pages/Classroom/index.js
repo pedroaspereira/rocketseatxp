@@ -31,6 +31,7 @@ const Classroom = () => {
           </SeriesCard>
           <SeriesCard>
             <SeriesHeader>3º ano</SeriesHeader>
+
             <SeriesStrong>Esino Médio</SeriesStrong>
           </SeriesCard>
         </CardWrapper>
