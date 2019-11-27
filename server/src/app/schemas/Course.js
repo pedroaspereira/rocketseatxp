@@ -1,17 +1,17 @@
 import mongoose, { Schema } from 'mongoose';
 
-const UserSchema = new Schema(
+const CourseSchema = new Schema(
   {
-    name: {
+    subject: {
       type: String,
       required: true,
     },
-    email: {
+    course_presentation_url: {
       type: String,
       required: true,
     },
-    password: {
-      type: String,
+    course_max_points: {
+      type: Number,
       required: true,
     },
   },
@@ -20,6 +20,6 @@ const UserSchema = new Schema(
   }
 );
 
-const user = mongoose.model('User', UserSchema);
+const course = mongoose.model('Course', CourseSchema);
 
-export default user;
+export default course;

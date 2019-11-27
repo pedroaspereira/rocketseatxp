@@ -1,16 +1,16 @@
 import mongoose, { Schema } from 'mongoose';
 
-const UserSchema = new Schema(
+const ExerciseSchema = new Schema(
   {
-    name: {
+    course_id: {
       type: String,
       required: true,
     },
-    email: {
+    exercise_presentation_url: {
       type: String,
       required: true,
     },
-    password: {
+    exercise_points: {
       type: String,
       required: true,
     },
@@ -20,6 +20,6 @@ const UserSchema = new Schema(
   }
 );
 
-const user = mongoose.model('User', UserSchema);
+const exercise = mongoose.model('Exercise', ExerciseSchema);
 
-export default user;
+export default exercise;
